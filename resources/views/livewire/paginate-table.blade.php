@@ -40,7 +40,7 @@
                             <th class="px-6 py-3 text-left">
                                <div class="flex items-center">
                                    <button wire:click="sortBy('FullName')" class="bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                                           First Name
+                                           Name First
                                    </button>
                                     @if ($sortField !== 'FullName')
                                     <span></span>
