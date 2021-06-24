@@ -38,38 +38,43 @@
                                 id
                             </th>
                             <th class="px-6 py-3 text-left">
-                               <div class="flex items-center">
-                                   <button wire:click="sortBy('FullName')" class="bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                                           Name First
-                                   </button>
+                                <div class="flex items-center">
+                                    <button wire:click="sortBy('FullName')"
+                                        class="bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                        Name First
+                                    </button>
                                     @if ($sortField !== 'FullName')
                                     <span></span>
                                     @elseif($sortAsc)
-                                    <svg class="ml-2 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
-                                      </svg>
+                                    <svg class="ml-2 w-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 15l7-7 7 7" />
+                                    </svg>
                                     @else
-                                    <svg class="ml-2 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                                      </svg>
+                                    <svg class="ml-2 w-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
 
                                     @endif
                             </th>
-                            <th
-                                class="px-6 py-3 ">
+                            <th class="px-6 py-3 ">
                                 <div class="flex items-center">
-                                    <button wire:click="sortBy('FullName')" class="bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                                            Last Name
+                                    <button wire:click="sortBy('FullName')"
+                                        class="bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                        Last Name
                                     </button>
 
                             </th>
                             <th
-                            class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                             Address
+                                class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                Address
                             </th>
                             <th
-                            class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                             City
+                                class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                City
                             </th>
                             <th
                                 class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
@@ -86,8 +91,8 @@
                             <td class="px-6 py-4 whitespace-no-wrap">
                                 <div class="flex items-center">
                                     <div class="flex-shrink-0 h-10 w-10">
-                                        <img class="h-10 w-10 rounded-full"
-                                    src="{{asset('/images/profile.JPG')}}" width="100%" alt="">
+                                        <img class="h-10 w-10 rounded-full" src="{{asset('/images/profile.JPG')}}"
+                                            width="100%" alt="">
                                     </div>
                                     <div class="ml-4">
                                         <div class="text-sm leading-5 font-medium text-gray-900">
@@ -112,7 +117,7 @@
                                 @if ($scotlist->Speciality)
                                 <span
                                     class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                   {{ $scotlist->Speciality}}
+                                    {{ $scotlist->Speciality}}
                                 </span>
                                 {{-- <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-red-100 text-red-800">
                                             Inactive
@@ -120,7 +125,7 @@
                                 @else
                                 <span
                                     class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-red-100 text-red-800">
-                                   No Title
+                                    No Title
                                 </span>
                                 @endif
                             </td>
@@ -128,15 +133,15 @@
                                 @if ($scotlist->active)
                                 <span
                                     class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                  Active
+                                    Active
 
-                                @else
-                                <span
-                                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-red-100 text-red-800">
-                                 No Active
-                                </span>
+                                    @else
+                                    <span
+                                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-red-100 text-red-800">
+                                        No Active
+                                    </span>
 
-                                @endif
+                                    @endif
 
                             </td>
                         </tr>
